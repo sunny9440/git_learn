@@ -1,0 +1,9 @@
+git init
+git branch <name>  --to create branch 
+git add [file] --to stage file
+git status -- to view the staged file no yet commited
+git log --to view the github commit history
+git diff -- shows the files that are changed but are noy yet commited
+git commit -m <message> --to commit the files in the staged area
+
+
