@@ -1,22 +1,20 @@
-
-
-
-
-
-
-
-
 git init
 git branch <name>  --to create branch 
 
 
 
-
+** checkout Branches
 git branch -b <name> --to create and checkout to branch 
 git switch -c <name>  
 - to switch branch
 git switch <branch_name>
 git checkout <branch_name>
+
+-force checkout when you don't need to commit local changes 
+git checkout -f other_branch
+
+
+** Manipulate Branches
 
 - to delete branch 
 git branch -d <branch_name>
@@ -30,11 +28,47 @@ git branch -m new_branch_name
 
 
 ** Merging  Branches **
+
 git merge branch_name -- first switch to branch where  you want to merge changes and use this command
+
+-- if conflict occured resolve the conflicts in the file and add the file and 
+git add .
+git merge --continue
+
+
+** squash Merging
+
+Squash merging combines multiple commits from a feature branch into a single commit when merging into the main branch.
+
+
+# Switch to the branch you want to merge into
+git checkout master
+
+# Perform a squash merge
+git merge --squash feature_branch
+
+# Commit the squashed changes
+git commit -m "Merged feature_branch with squash"
+
+
+** Abort Merge
+
+git merge --abort
+
+
+
+
+
+
 
 git branch -- to list all branches
 git branch -vv --to show branches and their upstreams
 
+
+**stashing changes
+git stash  save "message" -- to save changes that are not yet commited in working directory
+git stash --list --to list all the stashes
+git stash apply --to apply the last stash
 
 
 
