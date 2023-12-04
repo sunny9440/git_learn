@@ -55,6 +55,15 @@ git commit -m "Merged feature_branch with squash"
 
 git merge --abort
 
+** rebase ** used for moving or combining commits
+
+git checkout feature_branch
+git rebase master
+
+
+** interactive commit ** 
+git checkout feature_branch
+git rebase -i master
 
 
 
