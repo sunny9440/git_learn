@@ -1,5 +1,36 @@
 git init
 git branch <name>  --to create branch 
+
+git branch -b <name> --to create and checkout to branch 
+git switch -c <name>  
+- to switch branch
+git switch <branch_name>
+git checkout <branch_name>
+
+- to delete branch 
+git branch -d <branch_name>
+
+- to force delete a branch 
+git branch -D branch_name
+
+-to rename a branch 
+git branch -m new_branch_name
+
+
+
+** Merging  Branches **
+git merge branch_name -- first switch to branch where  you want to merge changes and use this command
+
+git branch -- to list all branches
+git branch -vv --to show branches and their upstreams
+
+
+git branch -u remote_name/remote_branch --to set upstream repo for the branch 
+
+
+
+
+
 git add [file] --to stage file
 git status -- to view the staged file no yet commited
 git log --to view the github commit history
