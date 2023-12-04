@@ -1,6 +1,9 @@
 git init
 git branch <name>  --to create branch 
 
+
+
+
 git branch -b <name> --to create and checkout to branch 
 git switch -c <name>  
 - to switch branch
