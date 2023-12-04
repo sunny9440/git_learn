@@ -85,12 +85,22 @@ git branch -u remote_name/remote_branch --to set upstream repo for the branch
 
 
 
+** diff
+it diff --compares staging and working area
+git diff --staged  - compares the staging and previous commit
+
+
 
 
 git add [file] --to stage file
 git status -- to view the staged file no yet commited
 git log --to view the github commit history
-git diff -- shows the files that are changed but are noy yet commited
 git commit -m <message> --to commit the files in the staged area
+
+** untract files
+git rm --cached file_name
+
+** files to not track should be listed in gitignore
+
 
 
