@@ -1,3 +1,4 @@
+
 git init
 git branch <name>  --to create branch 
 
@@ -60,6 +61,9 @@ git merge --abort
 git checkout feature_branch
 git rebase master
 
+**  git view contents of file in apartivuar commit 
+git show <commit_hash>:<pothtoyourfile>
+
 
 ** interactive commit ** 
 git checkout feature_branch
@@ -102,5 +106,22 @@ git rm --cached file_name
 
 ** files to not track should be listed in gitignore
 
+** Viewing Commits
+git log -p -n  -- show additional details like lines added and lines deleted for the loast n commits
+git log --stat    #shows each file insertions and dleletions    
+git log --pretty=short #show commit and authors
+git log --pretty=oneline #shows only the commits and thier corresponging messages
+git log --pretty=full # shows author, commit, date and commit msg
+git log --since=2.days #shows commit for last two days {2.days,2.months,2.years}
+
+git commit --ammed ---to ammend change to the last commit
+
+** unstaging
+git restore --staged filename
+** match workdir with last commit
+git checkout -f
+
+** restore file to the last commit version
+git checkout  <commithash> -- file_name if commit hash is specified it moves to that version
 
 
