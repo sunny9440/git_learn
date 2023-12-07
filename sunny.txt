@@ -90,7 +90,7 @@ git branch -u remote_name/remote_branch --to set upstream repo for the branch
 
 
 ** diff
-it diff --compares staging and working area
+git diff --compares staging and working area
 git diff --staged  - compares the staging and previous commit
 
 
