@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 git init
 git branch <name>  --to create branch 
@@ -125,3 +126,5 @@ git checkout -f
 git checkout  <commithash> -- file_name if commit hash is specified it moves to that version
 
 
+
+e
