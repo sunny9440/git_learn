@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 git init
 git branch <name>  --to create branch 
