@@ -123,6 +123,12 @@ git checkout -f
 ** restore file to the last commit version
 git checkout  <commithash> -- file_name if commit hash is specified it moves to that version
 
+** creating Tags
+git tag tagname
+git tag commithash tagname
 
+** interactive staging
+git add -e
+git add -u -- stage all changes of tracked files
+git add -p -- stages all changes in working dir
 
-e
